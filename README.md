@@ -3,7 +3,7 @@
 <h3>Quick Conversion forms for Twitter Bootstrap!</h3>
 
 Download
-<a href="http://twitter.github.io/bootstrap/">Bootstrap</a>
+<a href="http://twitter.github.io/bootstrap/">Bootstrap</a> 2.3.2
 
 ------
 View the live <a href="http://josmek.github.io/bootstrap-qc/">demo</a> using Fahrenheit and Celsius
