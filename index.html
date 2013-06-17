@@ -4,8 +4,8 @@
 
 <head>
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/bootstrap.css" rel="stylesheet" media="screen">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link href="css/bootstrap-responsive.css" rel="stylesheet">
 
 	<style type="text/css">
@@ -39,35 +39,41 @@
         margin-bottom: 15px;
         padding: 7px 9px;
       }
-
     </style>
 
 </head>
 
 <body>
 
+	<h1 class="text-center">Quick Conversion for Twitter Bootstrap</h1>
+	<br/>
+
+	<!--Script for input and conversion-->
 	<script>
 		function convert(degree){
 			if (degree=="C"){
- 				F=document.getElementById("c").value * 9 / 5 + 32;
- 				document.getElementById("f").value=F;
+ 				F=document.getElementById("ce").value * 9 / 5 + 32;
+ 				document.getElementById("fa").value=F;
  			}
 			else{	
- 				C=(document.getElementById("f").value -32) * 5 / 9;
- 				document.getElementById("c").value=C;
+ 				C=(document.getElementById("fa").value -32) * 5 / 9;
+ 				document.getElementById("ce").value=C;
  			}
 		}
 	</script>
 
+	<!--FORM-->
 	<div class="container">
       <form class="form-signin">
         <h2 class="form-signin-heading">Temperature</h2>
-        <input type="text" class="input-block-level" placeholder="Celsius" id="c" name="c" onkeyup="convert('C')">
-        <input type="text" class="input-block-level" placeholder="Fahrenheit" id="f" name="f" onkeyup="convert('F')">
+        <input type="text" class="input-block-level" placeholder="Celsius" id="ce" name="ce" onkeyup="convert('C')">
+        <input type="text" class="input-block-level" placeholder="Fahrenheit" id="fa" name="fa" onkeyup="convert('F')">
       </form>
 	</div>
 
+	<div class=" container">
+		<p class="text-center lead">Made by @josmek</p>
+		<p class="text-center lead">View Project on <a href="https://github.com/josmek/bootstrap-qc">GitHub</a></p>
+	</div>
 
 </body>
-
-</html>
